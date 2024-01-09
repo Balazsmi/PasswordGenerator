@@ -1,0 +1,66 @@
+body {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-size: 20px;
+    margin: 20px;
+}
+
+#mainContainer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 100px;
+    background-color: black;
+    height: 500px;
+    width: 600px;
+    border-radius: 25px;
+    border-style: solid;
+    border-color: white;
+    padding: 25px;
+}
+
+#generateButton {
+    background-color: var(--purple);
+    color: white;
+    font-size: 20px;
+    border-radius: 20px;
+    margin-top: 50px;
+    padding: 10px;
+    border-style: solid;
+    border-color: white;
+    width: 150px;
+    cursor: pointer;
+}
+
+#upperCaseCheckbox, #numberCheckbox, #symbolCheckbox {
+    scale: 1.5;
+    filter: invert(100%) grayscale(100%) brightness(1.75);
+}
+
+#length {
+    font-size: 15px;
+    width: 45px;
+}
+
+#output {
+    display: flex;
+    margin-top: 50px;
+    align-self: center;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    width: 400px;
+    height: 50px;
+    background-color: black;
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    border-radius: 15px;
+}

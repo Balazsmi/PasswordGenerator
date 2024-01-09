@@ -47,6 +47,12 @@ p {
 #length {
     font-size: 15px;
     width: 45px;
+    filter: invert(100%) grayscale(100%) brightness(1.75);
+    border-style: solid;
+    border-color: black;
+    padding: 5px;
+    border-radius: 7.5px;
+    border-width: 1px;
 }
 
 #output {

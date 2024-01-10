@@ -12,11 +12,11 @@
         <p>uppercase: <input type="checkbox" id="upperCaseCheckbox" name="upperCase" value="false"></p>
         <p>numbers:   <input type="checkbox" id="numberCheckbox"    name="number"    value="false"></p>
         <p>symbols:   <input type="checkbox" id="symbolCheckbox"    name="symbol"    value="false"></p>
-        <button id="generateButton">Generate</button>
-        <input type="text" id="output">
+        <button id="generateButton" onclick="generate();">Generate</button>
+        <input spellcheck="false" readonly type="text" id="output"><i id="copy" class="fa-solid fa-clone" onclick="copy();"></i>
     </div>
     
-
     <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/7228fdaa38.js" crossorigin="anonymous"></script>
 </body>
 </html>

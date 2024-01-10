@@ -8,12 +8,17 @@
 </head>
 <body>
     <div id="mainContainer">
-        <p>length:    <input type="number"   id="length" value="10"></p>
-        <p>uppercase: <input type="checkbox" id="upperCaseCheckbox" name="upperCase" value="false"></p>
-        <p>numbers:   <input type="checkbox" id="numberCheckbox"    name="number"    value="false"></p>
-        <p>symbols:   <input type="checkbox" id="symbolCheckbox"    name="symbol"    value="false"></p>
-        <button id="generateButton" onclick="generate();">Generate</button>
-        <input spellcheck="false" readonly type="text" id="output"><i id="copy" class="fa-solid fa-clone" onclick="copy();"></i>
+        <div id="optionsContainer">
+            <p>length:    </p><input type="number"   id="length" value="10">
+            <p>uppercase: </p><input class="options" type="checkbox" id="upperCaseCheckbox" name="upperCase" value="false">
+            <p>numbers:   </p><input class="options" type="checkbox" id="numberCheckbox"    name="number"    value="false">
+            <p>symbols:   </p><input class="options" type="checkbox" id="symbolCheckbox"    name="symbol"    value="false">
+        </div>
+        <div id="outputContainer">
+            <button id="generateButton" onclick="generate();">Generate</button>
+            <input spellcheck="false" readonly type="text" id="output">
+            <i id="copy" class="fa-solid fa-clone" onclick="copy();"></i>
+        </div>
     </div>
     
     <script src="main.js"></script>
